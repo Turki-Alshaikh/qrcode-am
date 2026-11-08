@@ -1,11 +1,13 @@
-# 🚀 QRCODE AM (Advance Maker)
-
 <div align="center">
-  [![Website](https://img.shields.io/badge/Website-Live_Demo-success?style=for-the-badge&logo=netlify)](https://qrcode-am.netlify.app/)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+  <h1>🚀 QRCODE AM (Advance Maker)</h1>
+
+  <a href="https://qrcode-am.netlify.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-Website-success?style=for-the-badge&logo=netlify" alt="Live Demo">
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Vanilla-JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  
+  <p><strong>A modern, advanced SaaS-style QR Code generator.</strong></p>
 </div>
 
 <br>
@@ -24,15 +26,20 @@ Test the application live here / جرب المشروع مباشرة من خلا�
 
 * **Real-time Preview:** See your changes instantly as you type or adjust settings.
   *(معاينة حية ومباشرة للتعديلات بمجرد تغييرها).*
+
 * **High-Resolution Export:** Download QR codes in custom sizes up to 4K resolution (PNG format).
   *(تصدير الصور بجودة عالية جداً تصل إلى 4K).*
+
 * **Full Customization:**
   * Change Foreground & Background colors. *(تغيير ألوان الرمز والخلفية).*
   * Multiple dot styles (Square, Rounded, Extra-rounded, Dots, Classy). *(أشكال متعددة للنقاط والزوايا لتناسب هويتك).*
+
 * **Logo Integration:** Easily upload and embed your custom logo seamlessly in the center of the QR code.
   *(إدراج شعارك الخاص أو صورة في منتصف الرمز بكل سهولة).*
+
 * **Advanced Settings:** Control output dimensions (Width/Height) and Error Correction Levels (H, Q, M, L).
   *(إعدادات متقدمة للتحكم بأبعاد الصورة ومستوى تصحيح الأخطاء لضمان عمل الرمز حتى مع وجود شعار).*
+
 * **Modern UI/UX:** Clean, responsive, SaaS-like interface designed for modern web standards.
   *(واجهة مستخدم عصرية، نظيفة، وسريعة الاستجابة متوافقة مع أجهزة الكمبيوتر والهواتف).*
 
@@ -42,7 +49,7 @@ This project is a static web application built purely with:
 *بُني هذا المشروع باستخدام تقنيات الويب الأساسية بدون الحاجة لإطارات عمل معقدة:*
 
 * **HTML5** (Semantic structuring)
-* **CSS3** (Modern Variables, CSS Grid, Flexbox, Responsive Design, Light Mode SaaS UI)
+* **CSS3** (Modern Variables, CSS Grid, Flexbox, Responsive Design)
 * **Vanilla JavaScript** (DOM manipulation, Real-time Event Listeners)
 * [**qr-code-styling**](https://qr-code-styling.com/) (A powerful library for rendering Canvas/SVG QR codes)
 
@@ -63,7 +70,6 @@ Since this is a client-side only application, no build process, NPM, or server s
 ## 🤝 Contributing | المساهمة
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Turki-Alshaikh/qrcode-am/issues).
-
 *للمساهمة في المشروع، نرحب بجميع اقتراحاتكم وتعديلاتكم. يمكنكم إضافة الميزات الجديدة عبر فتح Issue أو عمل Pull Request.*
 
 ## 📝 License | الرخصة
