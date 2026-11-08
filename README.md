@@ -1,64 +1,66 @@
-# 🚀 QRCODE AM (Advance Maker)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/Turki-Alshaikh/qrcode-am)
-![GitHub contributors](https://img.shields.io/github/contributors/Turki-Alshaikh/qrcode-am)
-![GitHub stars](https://img.shields.io/github/stars/Turki-Alshaikh/qrcode-am?style=social)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+#  QRCODE AM (Advance Maker)
 
 **QRCODE AM (Advance Maker)** is a modern, professional, and highly customizable QR Code generator built with clean web technologies. It allows users to generate high-resolution QR codes with custom colors, shapes, and embedded logos in real-time.
 
 **QRCODE AM** هي أداة متقدمة واحترافية لتوليد وتخصيص رموز الاستجابة السريعة (QR Code). تتيح للمستخدمين إنشاء رموز عالية الدقة مع إمكانية تخصيص الألوان، الأشكال، وإضافة الشعارات (Logos) مع معاينة مباشرة.
 
----
+##  Live Demo | المعاينة الحية
 
-## ✨ Features | المميزات
+Test the application live here:
 
-*   **Real-time Preview:** See your changes instantly as you type or adjust settings. (معاينة حية ومباشرة للتعديلات).
-*   **High-Resolution Export:** Download QR codes in up to 4K resolution (PNG format). (تصدير الصور بجودة عالية تصل إلى 4K).
-*   **Customization:** 
-    *   Change Foreground & Background colors. (تغيير ألوان الرمز والخلفية).
-    *   Multiple dot styles (Square, Rounded, Extra-rounded, Dots, Classy). (أشكال متعددة للنقاط والزوايا).
-*   **Logo Integration:** Easily upload and embed your custom logo in the center of the QR code. (إدراج شعارك الخاص في منتصف الرمز).
-*   **Advanced Settings:** Control output dimensions and Error Correction Levels (H, Q, M, L). (إعدادات متقدمة للتحكم بالأبعاد ومستوى تصحيح الأخطاء).
-*   **Modern UI/UX:** Clean, responsive, SaaS-like interface designed for 2026 web standards. (واجهة مستخدم عصرية ونظيفة متوافقة مع جميع الأجهزة).
+جرب المشروع مباشرة من خلال الرابط التالي:
 
-## 🛠️ Tech Stack | التقنيات المستخدمة
+ [**https://qrcode-am.netlify.app/**](https://qrcode-am.netlify.app/)
 
-This project is a static web application built with:
-*   **HTML5** (Semantic structuring)
-*   **CSS3** (Modern Variables, CSS Grid, Flexbox, Responsive Design)
-*   **Vanilla JavaScript** (DOM manipulation, Event Listeners)
-*   **[qr-code-styling](https://qr-code-styling.com/)** (Powerful library for rendering canvas/SVG QR codes)
+##  Features | المميزات
 
-## 🚀 Getting Started | طريقة التشغيل
+* **Real-time Preview:** See your changes instantly as you type or adjust settings. *(معاينة حية ومباشرة للتعديلات بمجرد تغييرها).*
 
-Since this is a client-side only application, no build process or server setup is required.
-بما أن المشروع يعمل بالكامل على المتصفح، لا تحتاج إلى أي إعدادات سيرفر.
+* **High-Resolution Export:** Download QR codes in custom sizes up to 4K resolution (PNG format). *(تصدير الصور بجودة عالية جداً تصل إلى 4K).*
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Turki-Alshaikh/qrcode-am.git
+* **Full Customization:**
+
+  * Change Foreground & Background colors. *(تغيير ألوان الرمز والخلفية).*
+
+  * Multiple dot styles (Square, Rounded, Extra-rounded, Dots, Classy). *(أشكال متعددة للنقاط والزوايا لتناسب هويتك).*
+
+* **Logo Integration:** Easily upload and embed your custom logo seamlessly in the center of the QR code. *(إدراج شعارك الخاص أو صورة في منتصف الرمز بكل سهولة).*
+
+* **Advanced Settings:** Control output dimensions (Width/Height) and Error Correction Levels (H, Q, M, L). *(إعدادات متقدمة للتحكم بأبعاد الصورة ومستوى تصحيح الأخطاء لضمان عمل الرمز حتى مع وجود شعار).*
+
+* **Modern UI/UX:** Clean, responsive, SaaS-like interface designed for modern web standards. *(واجهة مستخدم عصرية، نظيفة، وسريعة الاستجابة متوافقة مع أجهزة الكمبيوتر والهواتف).*
+
+##  Tech Stack | التقنيات المستخدمة
+
+This project is a static web application built purely with: بُني هذا المشروع باستخدام تقنيات الويب الأساسية بدون الحاجة لإطارات عمل معقدة:
+
+* **HTML5** (Semantic structuring)
+
+* **CSS3** (Modern Variables, CSS Grid, Flexbox, Responsive Design, Light Mode SaaS UI)
+
+* **Vanilla JavaScript** (DOM manipulation, Real-time Event Listeners)
+
+* [**qr-code-styling**](https://qr-code-styling.com/) (A powerful library for rendering Canvas/SVG QR codes)
+
+##  Getting Started | طريقة التشغيل محلياً
+
+Since this is a client-side only application, no build process, NPM, or server setup is required. بما أن المشروع يعمل بالكامل على المتصفح (Client-side)، لا تحتاج إلى أي إعدادات سيرفر أو تنزيل حزم برمجية.
+
+1. **Clone the repository | انسخ المستودع:**
+
    ```
-2. **Open the project:**
-   Simply open `index.html` in your favorite web browser.
-   (قم بفتح ملف `index.html` في متصفحك مباشرة).
+   git clone https://github.com/Turki-Alshaikh/qrcode-am.git
+   
+   ```
 
-## 🌐 Live Demo | معاينة حية
+2. **Open the project | افتح المشروع:** Simply navigate to the project folder and open `index.html` in your favorite web browser. *(فقط قم بفتح ملف `index.html` في متصفحك مباشرة للبدء).*
 
-You can preview the project live here: **[Insert Your GitHub Pages Link Here]**
-*(Don't forget to enable GitHub Pages in your repo settings to host this for free!)*
+##  Contributing | المساهمة
 
-## 🤝 Contributing | المساهمة
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/Turki-Alshaikh/qrcode-am/issues).
 
-Contributions, issues, and feature requests are welcome! 
-Feel free to check [issues page](https://github.com/Turki-Alshaikh/qrcode-am/issues).
+للمساهمة في المشروع، نرحب بجميع اقتراحاتكم وتعديلاتكم. يمكنكم إضافة الميزات الجديدة عبر فتح Issue أو عمل Pull Request.
 
-للمساهمة في المشروع، نرحب بجميع اقتراحاتكم وتعديلاتكم عبر فتح Issue أو Pull Request.
+##  License | الرخصة
 
-## 📄 License | الرخصة
-
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
-
----
-**Sponsored by:** [Mfatihy](https://mfatihy.com)  
-**Developed with ❤️ by [Turki-Alshaikh](https://github.com/Turki-Alshaikh)**
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed. هذا المشروع مفتوح المصدر بالكامل تحت رخصة MIT.
