@@ -1,0 +1,382 @@
+:root {
+    --bg-page: #f8fafc;
+    --bg-surface: #ffffff;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --border-light: #e2e8f0;
+    --border-focus: #94a3b8;
+    --danger: #ef4444;
+    --radius-lg: 16px;
+    --radius-md: 10px;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    --font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* الهيدر وهوية المشروع */
+.top-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.brand-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.brand-title span {
+    color: var(--primary);
+}
+
+.brand-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* التخطيط الشبكي للمحتوى */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 32px;
+    align-items: start;
+    flex: 1;
+}
+
+/* الكروت (Cards) */
+.card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.form-row .half {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* حقول الإدخال */
+.input-text, .input-select {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.input-text:focus, .input-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* منتقي الألوان المخصص */
+.color-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    background: var(--bg-page);
+}
+
+.color-input-wrapper input[type="color"] {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+}
+
+.color-input-wrapper input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+.color-input-wrapper input[type="color"]::-webkit-color-swatch { border: 1px solid rgba(0,0,0,0.1); border-radius: 6px; }
+
+.color-hex {
+    font-family: monospace;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* زر رفع الملفات */
+input[type="file"] {
+    display: none;
+}
+
+.file-upload-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    border: 2px dashed var(--border-focus);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-page);
+    color: var(--text-muted);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.file-upload-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background-color: #eff6ff;
+}
+
+.btn-text-danger {
+    background: none;
+    border: none;
+    color: var(--danger);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: right;
+    padding: 4px 0;
+}
+
+.btn-text-danger:hover {
+    text-decoration: underline;
+}
+
+/* الإعدادات المتقدمة (Accordion) */
+.advanced-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.advanced-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.advanced-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.chevron-icon {
+    color: var(--text-muted);
+    transition: transform 0.3s ease;
+}
+
+.advanced-header.active .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.advanced-body {
+    padding: 0 28px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.advanced-body.open {
+    max-height: 400px;
+    opacity: 1;
+    padding-bottom: 28px;
+}
+
+/* منطقة المعاينة */
+.preview-sticky {
+    position: sticky;
+    top: 32px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview-title {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: right;
+}
+
+.qr-preview-box {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.qr-preview-box svg {
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+    max-height: 280px;
+}
+
+/* زر التحميل الأساسي */
+.btn-primary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* الفوتر */
+.site-footer {
+    margin-top: auto;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-light);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.github-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.github-badge:hover {
+    color: var(--text-main);
+}
+
+.sponsor-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sponsor-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.sponsor-link img {
+    height: 32px;
+    object-fit: contain;
+}
+
+/* التجاوب مع الجوالات */
+@media (max-width: 860px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .preview-sticky {
+        position: relative;
+        top: 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
