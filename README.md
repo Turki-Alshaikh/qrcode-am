@@ -72,6 +72,7 @@ Since this is a client-side only application, no build process, NPM, or server s
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Turki-Alshaikh/qrcode-am/issues).
 *للمساهمة في المشروع، نرحب بجميع اقتراحاتكم وتعديلاتكم. يمكنكم إضافة الميزات الجديدة عبر فتح Issue أو عمل Pull Request.*
 
+
 ## 📝 License | الرخصة
 
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
